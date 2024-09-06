@@ -1,0 +1,77 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 300px; 
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px; 
+  object-fit: contain; 
+  display: block; 
+}
+
+.card-info {
+  flex: 1;
+  padding: 8px 0;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #3B2C39;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #A5938C;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.card-like,
+.card-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.card-like.liked {
+  color: red;
+}
+
+.card-delete {
+  color: #ff0000;
+}
